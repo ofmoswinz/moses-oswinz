@@ -384,3 +384,42 @@ body {
     transform: scale(1.05);
     box-shadow: 0 0 20px rgba(29, 185, 84, 0.4);
 }
+
+/* UPDATED RESPONSIVE & MOBILE FIX */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 5%;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .nav-links a {
+        margin: 5px 10px;
+        font-size: 0.8rem;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+        letter-spacing: 5px;
+    }
+
+    .section {
+        padding: 60px 5%;
+    }
+
+    /* Fix Spotify and Videos for small screens */
+    .unified-catalog, .video-container {
+        width: 100% !important;
+    }
+    
+    .media-grid {
+        grid-template-columns: 1fr; /* Stack videos on top of each other on phones */
+    }
+}
