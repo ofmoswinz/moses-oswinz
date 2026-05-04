@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<div id="loader">
+    <svg viewBox="0 0 800 100">
+        <text x="50%" y="50%" text-anchor="middle" class="loading-text">
+            MOSES OSWINZ
+        </text>
+    </svg>
+</div>
     <meta name="google-site-verification" content="Wi6i-TEFEPRK6i6CbnHkjPJyhGzg9PWWbmPrfS-F9pM" />
     <title>Moses Oswinz | Official Artist Website</title>
 <meta name="description" content="Official website of Moses Oswinz, a recording artist and musician. Home of the upcoming album 'No Days Off'.">
@@ -183,5 +190,15 @@
 </section>
 
     <script src="script.js"></script>
+
+    <script>
+    window.addEventListener("load", function() {
+        const loader = document.getElementById("loader");
+        // Wait a small moment after "load" so the animation can finish
+        setTimeout(() => {
+            loader.classList.add("loader-hidden");
+        }, 4500); // 4.5 seconds matches the animation length
+    });
+</script>
 </body>
 </html>
