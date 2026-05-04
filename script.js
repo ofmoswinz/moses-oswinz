@@ -31,3 +31,7 @@ navLinks.forEach(link => {
         console.log("Navigating to:", link.textContent);
     });
 });
+
+// Automatically update the copyright year
+const currentYear = new Date().getFullYear();
+document.getElementById('year').textContent = currentYear;
