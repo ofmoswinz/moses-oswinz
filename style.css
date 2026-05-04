@@ -132,14 +132,19 @@ body {
 }
 
 /* PROGRESS BAR */
-.progress-bg { 
-    width: 100%; background: #222; height: 8px; 
-    border-radius: 10px; border: 1px solid #333; 
+.progress-bg {
+    width: 100%;       /* The gray background takes full width */
+    background: #222;
+    height: 12px;
+    border-radius: 10px;
+    overflow: hidden;  /* Keeps the fill inside the rounded corners */
 }
 
-.progress-fill { 
-    height: 100%; border-radius: 10px; background: var(--primary);
-    animation: pulse-glow 2s infinite alternate; 
+.progress-fill {
+    height: 100%;      /* Fills the height of the parent */
+    background: var(--primary); /* Your Neon Pink */
+    /* REMOVE 'width: 100%' from here; the HTML style will handle it */
+    transition: width 1.5s ease-in-out;
 }
 
 @keyframes pulse-glow {
