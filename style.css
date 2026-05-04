@@ -279,3 +279,36 @@ body {
     text-transform: uppercase;
     opacity: 0.8;
 }
+
+/* TITLE ANIMATION */
+.animate-title {
+    font-size: clamp(2.5rem, 10vw, 5rem);
+    letter-spacing: 12px;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    /* This creates the glowing pulse effect */
+    animation: neon-pulse 2s cubic-bezier(0.4, 0, 0.2, 1) infinite alternate;
+}
+
+@keyframes neon-pulse {
+    from {
+        text-shadow: 
+            0 0 7px #fff,
+            0 0 10px #fff,
+            0 0 21px #fff,
+            0 0 42px var(--primary),
+            0 0 82px var(--primary),
+            0 0 92px var(--primary);
+    }
+    to {
+        text-shadow: 
+            0 0 4px #fff,
+            0 0 7px #fff,
+            0 0 13px #fff,
+            0 0 25px var(--primary),
+            0 0 50px var(--primary),
+            0 0 60px var(--primary);
+        transform: scale(1.02); /* Very subtle growth */
+    }
+}
