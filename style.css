@@ -95,24 +95,55 @@
     color: #888 !important;
     margin-top: 5px;
     text-transform: uppercase;
+/* SUPPORT SECTION STYLES */
+.support-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    background: var(--card-bg);
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid #333;
 }
 
-/* ORANGE BUTTON MATCHING QR CODE COLOR */
-.soda-button {
-    display: inline-block;
-    background: #FF813F; /* Orange matching 299542.png */
-    color: #fff;
-    padding: 14px 30px;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: 800;
-    font-size: 0.9rem;
+.support-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.small-qr {
+    width: 120px; /* Small and scannable */
+    height: 120px;
+    background: #fff;
+    padding: 5px;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto 8px;
+}
+
+.qr-text {
+    font-size: 0.7rem;
+    color: #888;
+    text-transform: uppercase;
     letter-spacing: 1px;
-    transition: 0.3s ease;
-    box-shadow: 0 5px 15px rgba(255, 129, 63, 0.3);
 }
 
-.soda-button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(255, 129, 63, 0.5);
+.soda-btn {
+    display: inline-block;
+    background: #FF813F; /* Support button orange */
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: 0.3s;
+    box-shadow: 0 4px 15px rgba(255, 129, 63, 0.3);
+}
+
+.soda-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(255, 129, 63, 0.5);
 }
