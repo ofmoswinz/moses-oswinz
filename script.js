@@ -21,3 +21,8 @@ window.addEventListener('scroll', () => {
         nav.style.background = "rgba(0,0,0,0.95)";
     }
 });
+
+window.addEventListener('load', () => {
+    document.getElementById('loader').classList.add('loader-hidden');
+});
+document.getElementById('year').textContent = new Date().getFullYear();
