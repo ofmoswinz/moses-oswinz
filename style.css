@@ -16,28 +16,33 @@ body { background: var(--bg); color: var(--text); font-family: 'Inter', sans-ser
 .release-date { color: var(--primary); font-weight: 800; letter-spacing: 3px; margin: 15px 0; font-size: 0.9rem; }
 .cta-button { display: inline-block; padding: 12px 30px; background: var(--primary); color: #fff; text-decoration: none; border-radius: 50px; font-weight: bold; transition: 0.3s; }
 
-/* NEWS & SMALL ARTS */
+/* SECTIONS */
 .section { padding: 80px 8%; }
 .section-title { font-size: 1.8rem; border-left: 4px solid var(--primary); padding-left: 10px; margin-bottom: 35px; text-transform: uppercase; letter-spacing: 2px; }
 
+/* STATUS */
 .album-announcement { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
-.small-art { max-width: 250px; } /* Smaller cover arts */
-.small-art img { width: 100%; border-radius: 10px; border: 1px solid #333; transition: 0.3s; }
-.small-art img:hover { border-color: var(--primary); transform: scale(1.05); }
-
+.small-art { max-width: 250px; }
+.small-art img { width: 100%; border-radius: 10px; border: 1px solid #333; }
 .progress-bg { width: 100%; max-width: 500px; background: #222; height: 10px; border-radius: 5px; margin: 20px auto; overflow: hidden; }
 .progress-fill { height: 100%; background: var(--primary); box-shadow: 0 0 10px var(--primary); }
-.status-sub { color: #888; font-size: 0.75rem; text-align: center; }
 
-/* 3 VIDEOS PER ROW */
+/* VIDEOS */
 .video-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
 .video-container iframe { border-radius: 10px; border: 1px solid #222; }
 .video-caption { font-size: 0.75rem; color: #888; text-align: center; margin-top: 10px; text-transform: uppercase; }
 
-/* SMALL SOCIALS */
-.social-grid { display: flex; justify-content: center; gap: 15px; }
+/* SOCIAL GRID WITH NAMES */
+.social-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); gap: 25px; justify-items: center; }
+.social-item { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+.social-item span { font-size: 0.7rem; font-weight: 600; text-transform: uppercase; color: #aaa; }
 .grid-box { width: 60px; height: 60px; background: #111; border-radius: 12px; border: 1px solid #222; display: flex; justify-content: center; align-items: center; color: #fff; font-size: 1.2rem; text-decoration: none; transition: 0.4s; }
 .grid-box:hover { background: var(--primary); transform: translateY(-5px); box-shadow: 0 5px 15px rgba(255, 0, 85, 0.4); }
+
+/* CONTACT CARD */
+.contact-card { text-align: center; background: #111; padding: 40px; border-radius: 20px; border: 1px solid #222; }
+.email-btn { display: inline-block; background: var(--primary); color: #fff; padding: 15px 30px; border-radius: 50px; text-decoration: none; font-weight: 800; font-size: 0.85rem; margin-top: 20px; transition: 0.3s; }
+.email-btn:hover { box-shadow: 0 0 20px var(--primary); transform: scale(1.02); }
 
 /* SUPPORT */
 .support-container { background: var(--card-bg); padding: 30px; border-radius: 20px; text-align: center; border: 1px solid #222; max-width: 600px; margin: 0 auto; }
@@ -45,13 +50,14 @@ body { background: var(--bg); color: var(--text); font-family: 'Inter', sans-ser
 .small-qr { width: 100px; height: 100px; background: #fff; padding: 5px; border-radius: 8px; }
 .soda-btn { background: var(--soda); color: #fff; padding: 12px 30px; border-radius: 50px; text-decoration: none; font-weight: 800; font-size: 0.8rem; }
 
-.site-footer { padding: 40px; text-align: center; border-top: 1px solid #111; font-size: 0.8rem; color: #555; }
+/* BRANDED FOOTER */
+.site-footer { padding: 40px; text-align: center; border-top: 1px solid #222; background: #000; }
+.site-footer p { font-weight: 400; color: #fff; }
+.footer-branding { color: var(--primary) !important; font-weight: 900 !important; font-size: 1.1rem !important; margin-top: 10px; text-transform: uppercase; letter-spacing: 2px; }
 
 /* MOBILE SETUP */
 @media (max-width: 768px) {
-    .navbar { padding: 10px 5%; }
     .nav-links { gap: 10px; }
-    .nav-links a { font-size: 0.7rem; }
-    .video-row { grid-template-columns: 1fr; }
-    .small-art { max-width: 180px; }
+    .nav-links a { font-size: 0.65rem; }
+    .social-grid { grid-template-columns: repeat(3, 1fr); }
 }
