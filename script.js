@@ -1,35 +1,23 @@
-/* 1. LOADER CONTROLLER */
+// Loader hidden when page is ready
 window.addEventListener('load', () => {
     const loader = document.getElementById('loader');
     setTimeout(() => {
         loader.classList.add('loader-hidden');
-    }, 3000); 
+    }, 2000);
 });
 
-/* 2. DYNAMIC NAVBAR SCROLL */
-window.addEventListener('scroll', function() {
-    const nav = document.querySelector('.navbar');
-    if (window.scrollY > 80) {
-        nav.style.padding = "12px 8%";
-        nav.style.background = "#000000";
-        nav.style.boxShadow = "0 5px 20px rgba(0, 0, 0, 0.5)";
-    } else {
-        nav.style.padding = "20px 8%";
-        nav.style.background = "rgba(0, 0, 0, 0.9)";
-        nav.style.boxShadow = "none";
-    }
-});
-
-/* 3. DYNAMIC YEAR & NAVIGATION */
-const currentYear = new Date().getFullYear();
+// Dynamic year in footer
 const yearSpan = document.getElementById('year');
-if(yearSpan) {
-    yearSpan.textContent = currentYear;
+if (yearSpan) {
+    yearSpan.textContent = new Date().getFullYear();
 }
 
-const navLinks = document.querySelectorAll('.nav-links a');
-navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-        console.log("Navigating to:", link.textContent);
-    });
+// Nav Scroll Background Change
+window.addEventListener('scroll', () => {
+    const nav = document.querySelector('.navbar');
+    if (window.scrollY > 50) {
+        nav.style.background = "#000";
+    } else {
+        nav.style.background = "rgba(0,0,0,0.95)";
+    }
 });
