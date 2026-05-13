@@ -26,3 +26,8 @@ window.addEventListener('load', () => {
     document.getElementById('loader').classList.add('loader-hidden');
 });
 document.getElementById('year').textContent = new Date().getFullYear();
+
+window.addEventListener('load', () => {
+    document.getElementById('loader').classList.add('loader-hidden');
+});
+document.getElementById('year').textContent = new Date().getFullYear();
