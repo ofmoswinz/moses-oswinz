@@ -3,21 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <meta name="google-site-verification" content="Wi6i-TEFEPRK6i6CbnHkjPJyhGzg9PWWbmPrfS-F9pM" />
     <title>Moses Oswinz | Official Artist Website</title>
-    <meta name="description" content="Official website of Moses Oswinz, a recording artist specializing in rap and Afro beats.">
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <div id="loader">
         <svg viewBox="0 0 1000 200">
-            <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" class="loading-text">
-                MOSES OSWINZ
-            </text>
+            <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" class="loading-text">MOSES OSWINZ</text>
         </svg>
     </div>
 
@@ -25,8 +18,9 @@
         <div class="logo">MOSES OSWINZ</div>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
             <li><a href="#music">Music</a></li>
-            <li><a href="#socials">Connect</a></li>
+            <li><a href="#videos">Videos</a></li>
         </ul>
     </nav>
 
@@ -40,35 +34,38 @@
 
     <section id="news" class="section">
         <h2 class="section-title">Latest News</h2>
+        <div class="album-announcement">
+            <div class="art-box">
+                <img src="1_20260412_014354_0000.jpg" alt="Cover Art">
+            </div>
+            <div class="art-box">
+                <img src="2_20260412_014354_0001.jpg" alt="Tracklist">
+            </div>
+        </div>
         <div class="progress-container">
             <p>Project Completion: 85%</p>
-            <div class="progress-bg">
-                <div class="progress-fill" style="width: 85%;"></div>
-            </div>
-            <p class="status-sub">Mixing & Mastering the Album</p>
+            <div class="progress-bg"><div class="progress-fill" style="width: 85%;"></div></div>
+            <p class="status-sub">Mixing & Mastering</p>
         </div>
     </section>
 
     <section id="music" class="section">
         <h2 class="section-title">The Catalogue</h2>
         <div class="unified-catalog">
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/2qTX9JQjamQWRWG7NsQFpx?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/2qTX9JQjamQWRWG7NsQFpx?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" loading="lazy"></iframe>
         </div>
     </section>
 
-    <section id="support" class="section">
-        <div class="support-container">
-            <h2 class="section-title">Support My Music</h2>
-            <div class="support-flex">
-                <div class="qr-box">
-                    <img src="299542.png" alt="Scan to support" class="small-qr">
-                    <p class="qr-text">Scan to support</p>
-                </div>
-                <div class="btn-box">
-                    <a href="https://buymesoda.com/3nPH8IpwscR1sYSVmXufPUt2Nc72" target="_blank" class="soda-btn">
-                         BUY ME A SODA
-                    </a>
-                </div>
+    <section id="videos" class="section">
+        <h2 class="section-title">Visuals</h2>
+        <div class="media-grid">
+            <div class="video-container">
+                <iframe width="100%" height="200" src="https://www.youtube-nocookie.com/embed/E-kcwtIoJfY" frameborder="0" allowfullscreen></iframe>
+                <p class="video-caption">She Broke My Heart</p>
+            </div>
+            <div class="video-container">
+                <iframe width="100%" height="200" src="https://www.youtube-nocookie.com/embed/0MeJ8DeJVq4" frameborder="0" allowfullscreen></iframe>
+                <p class="video-caption">African Boys</p>
             </div>
         </div>
     </section>
@@ -83,11 +80,21 @@
         </div>
     </section>
 
-    <footer class="site-footer">
-        <div class="footer-container">
-            <p>© <span id="year"></span> Moses Oswinz. All Rights Reserved.</p>
-            <p class="footer-branding">No Days Off | LUCID</p>
+    <section id="support" class="section">
+        <div class="support-container">
+            <h2 class="section-title">Support My Music</h2>
+            <div class="support-flex">
+                <div class="qr-box">
+                    <img src="299542.png" alt="Scan to support" class="small-qr">
+                </div>
+                <a href="https://buymesoda.com/3nPH8IpwscR1sYSVmXufPUt2Nc72" target="_blank" class="soda-btn">BUY ME A SODA</a>
+            </div>
         </div>
+    </section>
+
+    <footer class="site-footer">
+        <p>© <span id="year"></span> Moses Oswinz. All Rights Reserved.</p>
+        <p class="footer-branding">LUCID | No Days Off</p>
     </footer>
 
     <script src="script.js"></script>
